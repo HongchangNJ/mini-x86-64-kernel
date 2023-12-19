@@ -15,7 +15,7 @@ ${BUILD}/boot/%.o: oskernel/boot/%.asm
 	$(shell mkdir -p ${BUILD}/boot)
 	nasm $< -o $@
 
-bochs:
+bochs: all
 	bochs -q -f bochsrc
 
 clean:
@@ -23,3 +23,9 @@ clean:
 
 qemu:
 	qemu-system-x86_64 -fda hd.img
+
+qemu: all
+	qemu-system-i386 \
+	-m 32M \
+	-boot c \
+	-hda hd.img
