@@ -1,0 +1,5 @@
+build
+cmake-build-debug
+hd.img
+.idea
+bx_enh_dbg.ini
