@@ -1,2 +1,1 @@
-# mini-os-kernel
-A mini OS System
+因为另一个项目的代码提交和分支混乱，所以重新建了一个项目。
