@@ -13,7 +13,7 @@ void kernel_main(void) {
 
     printk("name: %s\n", s);
 
-
+    x64_cpu_check();
 
     while (true);
 }
